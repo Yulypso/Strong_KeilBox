@@ -1,0 +1,20 @@
+--cpu Cortex-M3
+"myproject\startup_stm32f103xb.o"
+"myproject\main.o"
+"myproject\gpio.o"
+"myproject\usart.o"
+"myproject\stm32f1xx_it.o"
+"myproject\button.o"
+"myproject\led.o"
+"myproject\stm32f1xx_ll_gpio.o"
+"myproject\stm32f1xx_ll_pwr.o"
+"myproject\stm32f1xx_ll_exti.o"
+"myproject\stm32f1xx_ll_usart.o"
+"myproject\stm32f1xx_ll_dma.o"
+"myproject\stm32f1xx_ll_rcc.o"
+"myproject\stm32f1xx_ll_utils.o"
+"myproject\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "myProject\myProject.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "myProject.map" -o myProject\myProject.axf
